@@ -1,39 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VizPlayer Pro</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VizWorkz - Vision that workz</title>
+    <link href="index.css" rel="stylesheet">
+
+<!--
+
+TemplateMo 593 personal shape
+
+https://templatemo.com/tm-593-personal-shape
+
+-->
 </head>
 <body>
-  <header>
-    <h1>VizPlayer Pro</h1>
-    <p>The ultimate video player and editor</p>
-  </header>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">VizWorkz</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </nav>
 
-  <main>
-    <section class="product">
-      <img src="images/vizplayer.png" alt="VizPlayer Pro Screenshot">
-      <h2>VizPlayer Pro</h2>
-      <p>Advanced video playback with editing features. Available for Windows.</p>
-      <a href="#" class="btn">Download</a>
-      <a href="#" class="btn secondary">Buy Now</a>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Viz Player Pro</h1>
+            <p class="subtitle">Viz Player Pro is a smart all-in-one video player and editor. Whether you want to watch, edit, or create, Viz player makes it Simple. Easy. Fast.</p>
+            <a href="#portfolio" class="cta-button">Explore Features</a>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView()"></div>
     </section>
 
-    <section class="features">
-      <h2>Key Features</h2>
-      <ul>
-        <li>📽️ Smooth video playback</li>
-        <li>✂️ Easy video editing</li>
-        <li>🎵 Audio mixing support</li>
-        <li>🌐 Multi-format compatibility</li>
-      </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Viz Player Pro</h2>
+            <h4 class="section-title-info fade-in">Enjoy smooth playback with easy controls, and Easily edit video clips and export to multiple formats.</h3>
+            <div class="about-content">
+                <div class="about-image slide-in-left"></div>
+                <div class="about-text slide-in-right">
+                    <h4 class="about-content-text">Video Player Features</h4>
+                    <ul>
+                    <li>Smooth Playback - Fully compatible with multiple formats including: .mp4, .mpeg, .mpg, .avi, .wmv, .mkv, .3gp, .flv, .m4v, .mov, .mts, .vob, .webm</li>
+                    <li>Essential Controls - Play, pause, next/previous navigation, volume up/down, and mute.</li>
+                    <li>Drag & Drop - Instantly load videos by dragging them into the player.</li>
+                    <li>Offline & Lightweight - No internet required, optimized for speed and efficiency.</li>
+                    </ul>
+                    <h4 class="about-content-text">Video Editor Features</h4>
+                    <ul>
+                    <li>Video Cut Out - Extract selected portions from a video, then combine and save them as a new clip.</li>
+                    <li>Video Cut Off - Remove unwanted portions from a video, then combine the remaining portions and save them as a new clip.</li>
+                    <li>Video Merge - Combine multiple videos into one continuous, seamless video.</li>
+                    <li>Encoding Support - Export your videos with multiple encoding options:</li>
+                    <ul>
+                        <li>MP4 (H.264) - Lossless, very fast, with slight timing variance.</li>
+                        <li>MP4 (H.264 - OpenH264) - Accurate video cuts, with balanced quality.</li>
+                        <li>WebM (VP8) - Accurate video cuts, legacy WebM format.</li>
+                        <li>WebM (VP9) - Accurate video cuts, modern WebM format, slower encoding.</li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 VizWorkz. All rights reserved.</p>
-  </footer>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Features</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-content">
+                        <h4>Smooth playback with easy controls</h4>
+                        <p>Essential controls such as play, pause, next/previous navigation, volume up/down, and mute are implemented.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-content">
+                        <h4>Video Editor Features</h4>
+                        <p>Video editing features such as Video Cut Out, Video Cut Off, and Video Merge are implemented.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-content">
+                        <h4>Seamless Video Processing</h4>
+                        <p>Processes edited videos and exports them in the chosen format.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-content">
+                        <h4>Flexible Export Options</h4>
+                        <p>Export videos with flexible encoding options, including MP4 (H.264), MP4 (OpenH264), WebM (VP8), and WebM (VP9).</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-content">
+                        <h4>Fast & Lightweight</h4>
+                        <p>No internet required, optimized for speed and efficiency.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-content">
+                        <h4>Your go-to video player + editor</h4>
+                        <p>The ultimate video player and editor for creating vlogs and sharing online.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-floating-shapes">
+            <div class="contact-shape contact-shape-1"></div>
+            <div class="contact-shape contact-shape-2"></div>
+            <div class="contact-shape contact-shape-3"></div>
+            <div class="contact-shape contact-shape-4"></div>
+            <div class="contact-shape contact-shape-5"></div>
+            <div class="contact-shape contact-shape-6"></div>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title fade-in">Contact Us</h2>
+                <div class="contact-us-info fade-in">
+                <p>Email: </p>
+                <p>admin@vizworkz.com</p>
+                <p>vizworkz.hub@gmail.com</p>
+                <p>Address: </p>
+                <p>Chennai, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 VizWorkz. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="vizplayerpro/privacy/privacy-policy.html">Vizplayer Player Pro Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="index.js"></script>
+
 </body>
 </html>
