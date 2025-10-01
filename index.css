@@ -328,6 +328,7 @@ https://templatemo.com/tm-593-personal-shape
         .hero {
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             background: var(--gradient-elegant);
@@ -484,6 +485,28 @@ https://templatemo.com/tm-593-personal-shape
             position: relative;
             max-width: 900px;
             padding: 0 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @keyframes fadeInAppear {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .microsoft-store-badge {
+            text-align: center;
+            position: relative;
+            color: var(--text-light);
+            z-index: 2;
+            max-width: 900px;
+            padding-top: 3rem;
+            margin-bottom: 1rem;
+            cursor: pointer; /* Ensures mouse icon appears */
+            opacity: 1;
+            transform: scale(0.60);
+            opacity: 0;
+            animation: fadeInAppear 1s ease 1.4s forwards;
         }
 
         .hero-subtitle {
